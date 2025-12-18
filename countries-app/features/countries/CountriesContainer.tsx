@@ -18,7 +18,7 @@ export const CountriesContainer = () => {
     }
     
     return (
-        <div>
+        <div className="dark:text-white">
             <CountriesList countries={countries} />
         </div>
     )

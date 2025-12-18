@@ -12,4 +12,12 @@ export class CountryService {
 
         return CountryMapper.toDomainList(countries);
     }
+
+    static async getCountryById(countryId: string): Promise<Country> {
+        const response = await fetch(`${API_URL}/alpha/${countryId}`);
+
+        const [country]: CountryDto[] = await response.json();
+
+        return CountryMapper.toDomain(country);
+    }
 }

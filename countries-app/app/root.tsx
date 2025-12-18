@@ -7,6 +7,9 @@ import {
   ScrollRestoration,
 } from "react-router";
 
+import { Navbar } from "../layout/components/Navbar";
+import { Container } from "../layout/components/Container";
+
 import type { Route } from "./+types/root";
 import "./app.css";
 
@@ -37,7 +40,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <Providers>
-          {children}  
+          <Navbar />
+          <Container>
+            {children}
+          </Container>
         </Providers>
         <ScrollRestoration />
         <Scripts />

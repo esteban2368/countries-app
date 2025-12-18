@@ -1,0 +1,7 @@
+interface ButtonProps {
+    children: React.ReactNode;
+}
+
+export const Button = ({ children }: ButtonProps) => { 
+    return <button type="button" className="text-body cursor-pointer bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">{children}</button>
+ }  
