@@ -1,13 +1,13 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { CountriesContainer } from "@features/countries/CountriesContainer";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Listado de paises" },
+    { name: "description", content: "Listado de paises y su descripcion." },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <CountriesContainer />;
 }

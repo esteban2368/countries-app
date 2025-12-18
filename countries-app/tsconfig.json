@@ -4,7 +4,7 @@
     "**/.server/**/*",
     "**/.client/**/*",
     ".react-router/types/**/*"
-  ],
+, "../features/countries"  ],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "types": ["node", "vite/client"],
@@ -15,7 +15,8 @@
     "rootDirs": [".", "./.react-router/types"],
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./app/*"]
+      "~/*": ["./app/*"],
+      "@features/*": ["features/*"],
     },
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,
