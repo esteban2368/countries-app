@@ -19,6 +19,8 @@ Para ejecutar el proyecto en entorno local, sigue estos pasos:
    npm start
    ```
 
+Requiere de node 22+
+
 Una vez iniciado, se podrá visualizar el inicio de la oplicación des un servicio local desde el navegador.
 
 ---
