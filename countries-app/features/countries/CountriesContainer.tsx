@@ -1,3 +1,5 @@
+import { CountriesList } from "@features/countries/components/CountriesList";
+
 import { useCountries } from "@features/countries/hooks/useCountries";
 
 export const CountriesContainer = () => {
@@ -17,7 +19,7 @@ export const CountriesContainer = () => {
     
     return (
         <div>
-            <pre>{JSON.stringify(countries, null, 2)}</pre>
+            <CountriesList countries={countries} />
         </div>
     )
 }
